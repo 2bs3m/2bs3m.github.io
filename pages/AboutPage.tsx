@@ -45,7 +45,7 @@ const AboutPage: React.FC = () => {
           </a>
           <div className="mt-6 space-y-3 text-slate-700 dark:text-slate-300">
             <p className="flex items-center">
-              <MapPinIcon className="w-5 h-5 mr-3 text-primary dark:text-primary-light flex-shrink-0" /> {GOOGLE_MAPS_IFRAME_SRC.includes("2BS%203M") ? "Medina, Rue 25x6, Dakar, Sénégal" :}
+              <MapPinIcon className="w-5 h-5 mr-3 text-primary dark:text-primary-light flex-shrink-0" /> {GOOGLE_MAPS_IFRAME_SRC.includes("2BS%203M") ? "Medina, Rue 25x6, Dakar, Sénégal" : ""}
             </p>
             <p className="flex items-center">
               <PhoneIcon className="w-5 h-5 mr-3 text-primary dark:text-primary-light flex-shrink-0" /> 
