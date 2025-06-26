@@ -23,6 +23,8 @@
 
 sudo apt update
 
+
+
 sudo apt install git
 
 sudo apt install nodejs npm
@@ -32,11 +34,13 @@ sudo apt install gh
 
 ```bash
 git clone https://github.com/2bs3m/2bs3m.github.io.git
+
 cd 2bs3m.github.io
 ```
 
 ```bash
 git config user.name "2bs3m"
+
 git config user.email "sen2bs221@gmail.com"
 ```
 
@@ -51,8 +55,12 @@ npm install
 
 ```bash
 git add .
+
 git commit -m "Describe your changes"
+
 git push origin main
+
+
 
 npm run build
 npm run deploy
