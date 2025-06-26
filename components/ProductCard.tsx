@@ -71,7 +71,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         <div className="flex justify-between items-center mt-auto">
           <p className="text-xl font-bold text-primary dark:text-primary-light">
             {product.price.toLocaleString('fr-FR')} FCFA
-          </p><br>
+          </p><br></br>
           <div className="flex items-center space-x-2">
             <button
               onClick={handleShare}
