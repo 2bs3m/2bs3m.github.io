@@ -59,7 +59,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       <div className="p-4 flex flex-col flex-grow">
         <Link to={`/product/${product.id}`} className="group" aria-label={`Voir les détails pour ${product.name_fr}`}>
           <h3 className="text-lg font-semibold text-slate-800 dark:text-white mb-1 truncate group-hover:text-primary dark:group-hover:text-primary-light transition-colors" title={product.name_fr}>
-            {product.name_fr}
+        {product.name_fr}
           </h3>
         </Link>
         {product.category_fr && (
@@ -68,28 +68,28 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         <p className="text-sm text-slate-600 dark:text-slate-300 mb-3 flex-grow line-clamp-3">
           {product.description_fr}
         </p>
-        <div className="flex justify-between items-center mt-auto">
-          <p className="text-xl font-bold text-primary dark:text-primary-light">
-            {product.price.toLocaleString('fr-FR')} FCFA
-          </p><br></br>
-          <div className="flex items-center space-x-2">
-            <button
-              onClick={handleShare}
-              className="p-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary-light transition-colors"
-              aria-label={`Partager ${product.name_fr}`}
-            >
-              <ShareIcon className="h-5 w-5" />
-            </button>
-            <button
-              onClick={handleAddToCart}
-              className="bg-primary hover:bg-primary-dark text-white font-semibold py-2 px-3 rounded-md transition-colors duration-300 flex items-center text-sm"
-              aria-label={`Ajouter ${product.name_fr} au panier`}
-            >
-              <ShoppingCartIcon className="h-5 w-5 sm:mr-1 md:mr-2" />
-              <span className="hidden sm:inline">Ajouter</span>
-            </button>
-          </div>
+        <p className="text-xl font-bold text-primary dark:text-primary-light mb-2">
+          {product.price.toLocaleString('fr-FR')} FCFA
+        </p>
+        <div className="flex justify-end items-center space-x-2 mt-1">
+          <button
+        onClick={handleShare}
+        className="p-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary-light transition-colors"
+        aria-label={`Partager ${product.name_fr}`}
+          >
+        <ShareIcon className="h-5 w-5" />
+          </button>
+          <button
+        onClick={handleAddToCart}
+        className="bg-primary hover:bg-primary-dark text-white font-semibold py-2 px-3 rounded-md transition-colors duration-300 flex items-center text-sm"
+        aria-label={`Ajouter ${product.name_fr} au panier`}
+          >
+        <ShoppingCartIcon className="h-5 w-5 sm:mr-1 md:mr-2" />
+        <span className="hidden sm:inline">Ajouter</span>
+          </button>
         </div>
+      </div>
+      </div>
       </div>
     </div>
   );
