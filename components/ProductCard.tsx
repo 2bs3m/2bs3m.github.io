@@ -72,7 +72,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           <p className="text-xl font-bold text-primary dark:text-primary-light">
             {product.price.toLocaleString('fr-FR')} FCFA
           </p>
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2"><br>
             <button
               onClick={handleShare}
               className="p-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary-light transition-colors"
