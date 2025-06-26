@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0284c7" />
+    <meta name="description" content="Site e-commerce 2BS 3M - Vente de produits et services divers." />
+    
+    <meta name="keywords" content="2BS, 3M, e-commerce, vente, produits, services" />
+    <meta name="author" content="BlueDISH Team" />
+    <meta name="robots" content="index, follow" />
+    <!-- <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" /> -->
+    
+    <!-- <meta name="msapplication-TileColor" content="#0284c7" /> -->
+    <!-- <meta name="msapplication-TileImage" content="/mstile-144x144.png" /> -->
+
+    <meta name="application-name" content="2BS 3M E-commerce" />
+
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-status-bar-style" content="default" />
+
+    <meta name="apple-mobile-web-app-title" content="2BS 3M E-commerce" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <meta property="og:site_name" content="2BS 3M E-commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    
+    <meta property="og:title" content="2BS 3M E-commerce" />
+    <meta property="og:description" content="Découvrez nos produits et services variés." />
+    <meta property="og:image" content="https://res.cloudinary.com/dbwgcxeed/image/upload/v1750617073/2bs3mHeroImage_zp0kkh.png" />
+    <meta property="og:url" content="https://2bs3m.github.io" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="2BS 3M E-commerce" />
+    <meta name="twitter:description" content="Découvrez nos produits et services variés." />
+    <meta name="twitter:image" content="https://res.cloudinary.com/dbwgcxeed/image/upload/v1750617073/2bs3mHeroImage_zp0kkh.png" />
+    <!-- <meta name="twitter:site" content="@2bs3m" /> -->
+    <!-- <meta name="twitter:creator" content="@2bs3m" /> -->
+    
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="manifest" href="/manifest.json" />
+
+    <title>2BS 3M E-commerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class', // or 'media'
+        theme: {
+          extend: {
+            colors: {
+              'primary': {
+                light: '#38bdf8', // sky-400
+                DEFAULT: '#0284c7', // sky-600
+                dark: '#0369a1' // sky-700
+              },
+              'secondary': '#f0f9ff', // sky-50
+              'accent': '#fbbf24', // amber-400
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Basic scrollbar styling for a more modern look */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #0284c7; /* primary color */
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #0369a1; /* primary-dark color */
+      }
+      /* For dark mode */
+      .dark ::-webkit-scrollbar-track {
+        background: #2c3e50; /* A dark background for the track */
+      }
+      .dark ::-webkit-scrollbar-thumb {
+        background: #38bdf8; /* A lighter thumb for dark mode */
+      }
+      .dark ::-webkit-scrollbar-thumb:hover {
+        background: #0ea5e9; /* A slightly different hover for dark thumb */
+      }
+      body {
+        overscroll-behavior-y: contain; /* Prevents pull-to-refresh on mobile when not needed */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.6.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-secondary dark:bg-slate-900 text-slate-800 dark:text-slate-200 transition-colors duration-300">
+    <noscript>Vous devez activer JavaScript pour exécuter cette application.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

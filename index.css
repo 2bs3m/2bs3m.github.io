@@ -1,0 +1,36 @@
+/* Tailwind directives - these are typically used if you have a build process for Tailwind */
+/* For CDN usage, this file might be minimal or not strictly necessary if all base styles are handled by Tailwind's own reset/preflight via CDN */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif; /* Example font, ensure it's loaded or use system fonts */
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Add any global styles here that are not easily managed by Tailwind utility classes */
+.map-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Forcing specific aspect ratio for service images */
+.service-image-container {
+  aspect-ratio: 1 / 1;
+}
